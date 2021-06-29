@@ -1,0 +1,774 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: 0;
+}
+
+/* ----------------- TOP NAVBAR ----------------- */
+
+#topbar {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 14px;
+    font-weight: 600;
+    outline: none;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid crimson;
+}
+
+.buy-now-btn {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+}
+
+.buy-now-btn:hover {
+    background-color: rgb(98, 124, 20);
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(193, 193, 193, 0.2);
+}
+
+#cover {
+    width: 100%;
+    height: 700px;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-size: 100% auto;
+    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.cover-heading {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center
+}
+
+.cover-description {
+    font-size: 14px;
+    letter-spacing: 0.5;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+}
+
+/* ----------------- END TOP NAVBAR ----------------- */
+
+/* ----------------- STEP SECTION ----------------- */
+
+#step-section {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.step-card{
+    width:100%;
+    height:450px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20%;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; */
+}
+
+.step-icon {
+    width: 96px;
+    font-size: 96px;
+}
+
+.step-icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.step-1 {
+    background-color: #5acda6;
+}
+
+.step-2 {
+    background-color: #91ac41;
+}
+
+.step-3 {
+    background-color: #e4b476;
+}
+
+.step-4 {
+    background-color: #ff69da;
+}
+
+.step-label {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.step-description {
+    font-size: 14px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* ----------------- END STEP SECTION ----------------- */
+
+/* ----------------- VEGAN STORE SECTION ----------------- */
+
+#vegan-store-section {
+    background-color: #f7eee2;
+    margin: 0;
+    text-align: center;
+    padding: 35px;
+}
+
+.vegan-heading-container {
+    box-sizing: border-box;
+    margin-top: 35px;
+}
+
+.fresh-food {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    /* margin-top: 35px; */
+    padding-top: 35px;
+    color: #91ac41;
+}
+
+.vegan-heading {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.vegan-heading-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5;
+    margin: 0;
+}
+
+.vegan-grid-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.vegan-store-card {
+    width: 100%;
+    max-width:300px;
+}
+
+.item-icon-bg:hover {
+    /* transform: scale(1.2, 1.2); */
+    animation: rotate 3s ease-in infinite alternate forwards;
+}
+
+.item-icon-bg {
+    background-color: #e3b375;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.item-icon {
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-heading {
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+.card-description {
+    font-size: 14px;
+    letter-spacing: 0.5;
+    font-weight: 500;
+    color: #8b8b99;
+}
+
+/* ----------------- END VEGAN STORE SECTION ----------------- */
+
+/* ----------------- TESTIMONIAL SECTION ----------------- */
+
+#testimonial-section {
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 35px;
+}
+
+.testimonial-grid-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.testimonial-card {
+    width: 100%;
+    max-width:300px;
+    background-color: #f5f6fb;
+    border-radius: 45px 0 45px 45px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.testimonial-msg {
+    font-size: 13px;
+    letter-spacing: 0.5;
+    font-style: italic;
+    color: #8b8b99;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.testimonial-job {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    margin-top: 0;
+}
+
+/* ----------------- END TESTIMONIAL SECTION ----------------- */
+
+/* ----------------- FOLLOW US SECTION ----------------- */
+
+#follow-us-section {
+    margin: 0;
+    width: 100%;
+}
+
+.follow-us-grid-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.left-img {
+    height: 500px;
+}
+
+.strawberry {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.right-img {
+    width: 100%;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.follow-heading {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+}
+
+.follow-label {
+    color: #8b8b99;
+    font-size: 13px;
+    width: 60%;
+}
+
+.input-wrapper {
+    width: 100%;
+}
+
+.text-input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.text-input:focus {
+    box-shadow: 0px 1px 5px #ccc;
+}
+
+.sub-btn {
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f69dad;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    letter-spacing: 0.5;
+}
+
+.sub-btn:hover {
+    background-color: red;
+}
+
+
+/* ----------------- END FOLLOW US SECTION ----------------- */
+
+/* ----------------- RESPONSE SECTION ----------------- */
+
+#response-section {
+    margin: 0;
+    background-color: #f6fcfa;
+    padding: 50px;
+}
+
+.response-grid-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.response-card {
+    width: 100%;
+    max-width:300px;
+    
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.response-number {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.response-label {
+    font-size: 12px;
+    color: #57e3b5;
+    font-style:italic;
+}
+
+/* ----------------- END RESPONSE SECTION ----------------- */
+
+/* ----------------- VIDEO SECTION ----------------- */
+
+#video-section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.video-heading {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.video {
+    height: 300px;
+    width: 80%;
+    border: none;
+}
+
+/* ----------------- END VIDEO SECTION ----------------- */
+
+/* ----------------- CONTACT SECTION ----------------- */
+
+#contact-section {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 15% 10% 15%;
+}
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.contact-heading {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.store-location {
+    width: 50%;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.store-name {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0;
+}
+
+.contact-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid rgba(193, 193, 193, 0.2);
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#message-area {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(193, 193, 193, 0.2);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+}
+
+/* ----------------- END CONTACT SECTION ----------------- */
+
+/* ----------------- FOOTER SECTION ----------------- */
+
+#footer-section {
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+}
+
+.copyright-notice {
+    font-weight: 500;
+    font-size: 12px;
+}
+/* ----------------- END FOOTER SECTION ----------------- */
+
+/* ----------------- VIEWPORT ----------------- */
+
+@media screen and (max-width: 600px) {
+
+    .nav-link{
+        display: none;
+    }
+
+    .cover-heading {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 7.8;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .cover-description {
+        font-size: 10px;
+        letter-spacing: 0.5;
+        font-weight: 400;
+        color: #8b8b99;
+        text-align: center;
+    }
+    
+
+    #cover {
+        width: 100%;
+        height: 500px;
+    }
+
+    #step-section {
+        grid-template-columns: auto;
+    }
+
+    .vegan-grid-container{
+        grid-template-columns: auto;
+    }
+
+    .vegan-heading {
+        font-size: 40px;
+    }
+
+    .vegan-heading-label {
+        font-size: 10px;
+    }
+
+    .testimonial-grid-container {
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .testimonial-msg {
+        font-size: 12px;
+    }
+
+    .follow-us-grid-container{
+        grid-template-columns: auto;
+    }
+
+    .left-img {
+        display: none;
+    }
+
+    .right-img {
+        height: 600px;
+        margin: 0;
+    }
+
+    .response-grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .video-heading {
+        font-size: 40px;
+    }
+
+    .contact-grid-container {
+        grid-template-columns: auto;
+    }
+
+    .contact-heading {
+        font-size: 40px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    #cover {
+        width: 100%;
+        height: 500px;
+    }
+
+    #step-section {
+        grid-template-columns: auto auto;
+    }
+
+    .vegan-grid-container{
+        grid-template-columns: auto auto;
+    }
+
+    .testimonial-grid-container {
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .testimonial-msg {
+        font-size: 12px;
+    }
+
+    .follow-us-grid-container{
+        grid-template-columns: auto;
+    }
+
+    .left-img {
+        height: 500px;
+        margin: 0;
+    }
+
+    .strawberry {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .right-img {
+        height: 600px;
+        margin: 0;
+    }
+
+    .response-grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .contact-grid-container {
+        grid-template-columns: auto;
+    }
+
+    .contact-heading {
+        font-size: 40px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #cover {
+        width: 100%;
+        height: 500px;
+    }
+
+    #step-section {
+        grid-template-columns: auto auto;
+    }
+
+    .vegan-grid-container{
+        grid-template-columns: auto auto;
+    }
+
+    .testimonial-grid-container {
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .testimonial-msg {
+        font-size: 12px;
+    }
+
+    .left-img {
+        height: 500px;
+    }
+
+    .strawberry {
+        width: auto;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .contact-grid-container {
+        grid-template-columns: 55% 35%;
+        grid-gap: 5%;
+    }
+
+    .contact-heading {
+        font-size: 40px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1370px) and (min-width: 992px) { 
+
+    .step-description{
+        font-size: 13px;
+    }
+
+    .testimonial-grid-container {
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 10px;
+    }
+
+    
+    .left-img {
+        height: 500px;
+    }
+
+    .strawberry {
+        width: auto;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .contact-grid-container {
+        grid-template-columns: 55% 35%;
+        grid-gap: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1370px) {
+
+    .left-nav {
+        margin-left: 50px;
+    }
+
+    .right-nav {
+        margin-right: 50px;
+    }
+
+    .follow-us-grid-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+/* ----------------- END VIEWPORT ----------------- */
+
+/* ----------------- ANIMATION ----------------- */
+
+@keyframes rotate {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* ----------------- END ANIMATION ----------------- */
